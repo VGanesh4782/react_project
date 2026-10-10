@@ -5,6 +5,10 @@ import Counter from "./components/UseState";
 import Input from "./components/Input";
 import UseEffectbasic from "./components/UseEffect";
 import UseEffect from "./components/UseEffectApi";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
 function App(){
   return(
     <div>
@@ -15,6 +19,13 @@ function App(){
       <Counter/>
       <Input/>
       <UseEffect/>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/Home" element={<Home/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/Services" element={<Services/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   )
 }

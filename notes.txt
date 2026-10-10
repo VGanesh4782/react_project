@@ -1,0 +1,35 @@
+Hook:
+ A react hook is a build in or custom function  that leads functional component excess react features such as state,context,defects,references without using class component
+ Hook is a special kind of function which helps you to use react spatial features to make changes in fuctionnla component.
+ 
+use state hook:
+ it is used to store and manage data that can be changed inside a component
+
+ syntax:
+   const [state ,setState]=useState
+[initial value]
+
+ how it works:
+ const[count,setCount] = useState[0]
+
+useEffect:
+it is a react hook used to perform an action automatically afetr a component renders
+it is used for api calls , fetching data, timers and some lifge cycle methods
+
+how it works:
+const [count,setCount]=useState[0]
+
+syntax:
+useEffect(()=>{
+
+},[]);
+
+useref:
+it is a react hook that returns a mutable ref object, .current property persist across  component renders updating .current does not trigger a component re-render irt can be used to reference.dog element or store mutable values that need s to persist across renders. 
+it is a ract hook that leads us to stote a value or directly access a dom element without causing the component to re-render when the value changes.
+
+BrowserRouter:It enables routing funtionality in our react application
+
+Routes: it is a container for all the route components and defines the routing configuration
+
+Route:it defines the relationship between a URL and a componnent
